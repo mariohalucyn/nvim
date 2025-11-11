@@ -37,6 +37,7 @@ nvim
     └── plugins/             # Plugin definitions and configurations
 ```
 
+## After install
 ```
 # Update all plugins
 :Lazy sync
