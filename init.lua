@@ -1,3 +1,3 @@
-require("kacper.remap")
 require("config.lazy")
+require("kacper.remap")
 require("kacper.set")
