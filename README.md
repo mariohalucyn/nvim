@@ -11,6 +11,7 @@ Make sure the following dependencies are installed before using this configurati
 | **[Node.js](https://nodejs.org/)** and **[npm](https://www.npmjs.com/)** | — |
 | **[Go](https://go.dev/)** | — |
 | **[Lua](https://www.lua.org/)** | `5.1` or newer |
+| **[ripgrep](https://github.com/BurntSushi/ripgrep)** | - |
 
 ---
 
