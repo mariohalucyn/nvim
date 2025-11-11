@@ -1,0 +1,48 @@
+## Requirements
+
+Make sure the following dependencies are installed before using this configuration:
+
+| Dependency | Minimum Version |
+|-------------|-----------------|
+| **[Neovim](https://neovim.io/)** | `0.11.2` or newer |
+| **[Git](https://git-scm.com/)** | `2.19.0` or newer |
+| **[curl](https://curl.se/)** | — |
+| **[gcc](https://github.com/gcc-mirror/gcc)** | — |
+| **[Node.js](https://nodejs.org/)** and **[npm](https://www.npmjs.com/)** | — |
+| **[Go](https://go.dev/)** | — |
+| **[Lua](https://www.lua.org/)** | `5.1` or newer |
+
+---
+
+## Installation
+
+```bash
+# 1. Backup your current Neovim config (optional)
+mv ~/.config/nvim ~/.config/nvim.bak
+
+# 2. Clone the repository
+git clone https://github.com/mariohalucyn/nvim ~/.config/nvim
+
+# 3. Open Neovim
+nvim
+```
+
+## Directory structure
+```
+~/.config/nvim
+├── init.lua                 # Main Neovim entry file
+└── lua/
+    ├── config/              # Lazy.nvim setup and plugin loader
+    ├── kacper/              # Personal settings (keymaps, theme, tab size, etc.)
+    └── plugins/             # Plugin definitions and configurations
+```
+
+```
+# Update all plugins
+:Lazy sync
+:Mason update
+:TSUpdate
+
+# Check Neovim health
+:checkhealth
+```
