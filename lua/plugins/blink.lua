@@ -27,8 +27,8 @@ return {
 
 			['<Tab>'] = { 'accept', 'fallback' },
 			['<CR>'] = { 'accept', 'fallback' },
-      ['<C-j>'] = { 'select_prev', 'fallback' },
-      ['<C-k>'] = { 'select_next', 'fallback' },
+      ['<C-k>'] = { 'select_prev', 'fallback' },
+      ['<C-j>'] = { 'select_next', 'fallback' },
 		},
 
 		appearance = {
