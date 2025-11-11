@@ -33,7 +33,7 @@ nvim
 ├── init.lua                 # Main Neovim entry file
 └── lua/
     ├── config/              # Lazy.nvim setup and plugin loader
-    ├── kacper/              # Personal settings (keymaps, theme, tab size, etc.)
+    ├── kacper/              # Personal settings
     └── plugins/             # Plugin definitions and configurations
 ```
 

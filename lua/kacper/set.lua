@@ -1,5 +1,3 @@
-vim.cmd.colorscheme "kanagawa-wave"
-
 vim.opt.nu = true
 vim.opt.relativenumber = true
 
