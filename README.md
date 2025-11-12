@@ -26,6 +26,7 @@ git clone https://github.com/mariohalucyn/nvim ~/.config/nvim
 
 # 3. Open Neovim
 nvim
+```
 
 ## Installation Windows PowerShell
 
