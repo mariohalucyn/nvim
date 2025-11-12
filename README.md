@@ -15,7 +15,7 @@ Make sure the following dependencies are installed before using this configurati
 
 ---
 
-## Installation
+## Installation Linux / macOS
 
 ```bash
 # 1. Backup your current Neovim config (optional)
@@ -25,6 +25,21 @@ mv ~/.config/nvim ~/.config/nvim.bak
 git clone https://github.com/mariohalucyn/nvim ~/.config/nvim
 
 # 3. Open Neovim
+nvim
+
+## Installation Windows PowerShell
+
+```bash
+# 1. Backup your current Neovim config (optional)
+Rename-Item "$env:LOCALAPPDATA\nvim" "$env:LOCALAPPDATA\nvim.bak" -ErrorAction SilentlyContinue
+
+# 2. Clone the repository
+git clone https://github.com/mariohalucyn/nvim "$env:LOCALAPPDATA\nvim"
+
+# 3. In lua/plugins/undotree.lua, uncomment the following line so Undotree can work correctly on Windows:
+vim.g.undotree_DiffCommand = "FC"
+
+# 4. Open Neovim
 nvim
 ```
 
