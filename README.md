@@ -8,7 +8,7 @@ Make sure the following dependencies are installed before using this configurati
 | **[Git](https://git-scm.com/)** | `2.19.0` or newer |
 | **[curl](https://curl.se/)** | — |
 | **[gcc](https://github.com/gcc-mirror/gcc)** | — |
-| **[nvm](ttps://github.com/nvm-sh/nvm)** | — |
+| **[nvm](https://github.com/nvm-sh/nvm)** | — |
 | **[Go](https://go.dev/)** | — |
 | **[Lua](https://www.lua.org/)** | `5.1` or newer |
 | **[ripgrep](https://github.com/BurntSushi/ripgrep)** | - |
