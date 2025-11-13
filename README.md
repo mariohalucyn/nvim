@@ -50,7 +50,7 @@ nvim
 ├── init.lua                 # Main Neovim entry file
 └── lua/
     ├── config/              # Lazy.nvim setup and plugin loader
-    ├── kacper/              # Personal settings
+    ├── kacper/              # Personal settings, config is mine so I use my name, you can change but remember to change import in init.lua file ;)
     └── plugins/             # Plugin definitions and configurations
 ```
 
