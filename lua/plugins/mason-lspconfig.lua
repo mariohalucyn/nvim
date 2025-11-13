@@ -7,13 +7,16 @@ return {
     { "mason-org/mason.nvim", opts = {} },
     "neovim/nvim-lspconfig",
   },
-  config = function()
+  config = function(_, opts)
+    require("mason-lspconfig").setup(opts)
+
     vim.lsp.config("vtsls", {
       filetypes = { "typescript", "javascript", "vue" },
       on_attach = function()
         vim.lsp.enable("vue_ls")
-      end
+      end,
     })
-    vim.lsp.enable({"vtsls"})
+
+    vim.lsp.enable({ "vtsls" })
   end
 }
