@@ -7,6 +7,8 @@ vim.opt.shiftwidth = 2
 vim.opt.expandtab = true
 vim.opt.smartindent = true
 
+vim.opt.clipboard = "unnamedplus"
+
 vim.diagnostic.config({
   virtual_text = true,
   underline = true,
