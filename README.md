@@ -56,11 +56,6 @@ nvim
 
 ## After install
 ```
-# Update all plugins
-:Lazy sync
-:Mason update
-:TSUpdate
-
 # Check Neovim health
 :checkhealth
 ```
