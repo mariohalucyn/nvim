@@ -9,7 +9,6 @@ return {
   },
   config = function(_, opts)
     require("mason-lspconfig").setup(opts)
-
     vim.lsp.config("vtsls", {
       filetypes = { "typescript", "javascript", "vue" },
       on_attach = function()
