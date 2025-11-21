@@ -25,11 +25,7 @@ return {
 		keymap = {
 			preset = 'default',
 
-			['<Tab>'] = { 'accept', 'fallback' },
-			['<CR>'] = { 'accept', 'fallback' },
-      ['<C-k>'] = { 'select_prev', 'fallback_to_mappings' },
-      ['<C-j>'] = { 'select_next', 'fallback_to_mappings' },
-      ['<C-s>'] = { 'show_signature', 'hide_signature', 'fallback' },
+      ['<CR>'] = { 'accept', 'fallback' },
 		},
 
 		appearance = {
