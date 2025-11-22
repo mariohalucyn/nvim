@@ -15,6 +15,11 @@ Make sure the following dependencies are installed before using this configurati
 
 ---
 
+## Quick start
+```bash
+git clone https://github.com/mariohalucyn/nvim ~/.config/nvim
+```
+
 ## Installation Linux / macOS
 
 ```bash
