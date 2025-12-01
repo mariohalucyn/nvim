@@ -11,7 +11,8 @@ Make sure the following dependencies are installed before using this configurati
 | **[nvm](https://github.com/nvm-sh/nvm)** | — |
 | **[Go](https://go.dev/)** | — |
 | **[Lua](https://www.lua.org/)** | `5.1` or newer |
-| **[xclip](https://github.com/astrand/xclip)** | - |
+| **[ripgrep](https://github.com/astrand/xclip)** | — |
+| **[xclip](https://github.com/astrand/xclip)** | — |
 
 ---
 
