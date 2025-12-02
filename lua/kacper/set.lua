@@ -12,7 +12,12 @@ vim.opt.clipboard = "unnamedplus"
 vim.diagnostic.config({
   virtual_text = true,
   underline = true,
-  update_in_insert = false,
+  update_in_insert = true,
   severity_sort = true,
-  signs = false,
+  signs = {
+    numhl = {
+      [vim.diagnostic.severity.ERROR] = "ErrorMsg",
+      [vim.diagnostic.severity.WARN] = "WarningMsg",
+    },
+  },
 })
