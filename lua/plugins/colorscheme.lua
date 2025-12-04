@@ -1,8 +1,7 @@
 return {
-  "bluz71/vim-moonfly-colors",
-  name = "moonfly",
-  priority = 1000,
+  "rebelot/kanagawa.nvim",
+  name = "kanagawa",
   config = function()
-    vim.cmd("colorscheme moonfly")
+    vim.cmd("colorscheme kanagawa")
   end
 }
