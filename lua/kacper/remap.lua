@@ -1,5 +1,4 @@
 vim.keymap.set("n", "<leader>pv", vim.cmd.Ex)
 vim.keymap.set("n", "<C-d>", "<C-d>zz")
 vim.keymap.set("n", "<C-u>", "<C-u>zz")
--- vim.keymap.set("n", "<leader>of", vim.diagnostic.open_float())
 vim.keymap.set("n", "<leader>of", function() vim.diagnostic.open_float() end)
