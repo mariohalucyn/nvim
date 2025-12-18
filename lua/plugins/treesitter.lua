@@ -1,14 +1,34 @@
 return {
-  "nvim-treesitter/nvim-treesitter",
-  event = { "BufReadPost", "BufNewFile" },
-  version = false,
-  build = ":TSUpdate",
-  config = function()
-    require('nvim-treesitter.configs').setup({
-      ensure_installed = { "c", "go", "javascript", "lua", "php", "python", "sql", "typescript", "vim", "vimdoc", "vue", "query", "markdown", "markdown_inline" },
-      highlight = {
-        enable = true,
-      },
-    })
-  end
+    "nvim-treesitter/nvim-treesitter",
+    build = ":TSUpdate",
+    config = function ()
+        local parsers = {
+            "go",
+            "javascript",
+            "lua",
+            "php",
+            "python",
+            "sql",
+            "typescript",
+            "vim",
+            "vimdoc",
+            "vue",
+            "query",
+            "markdown",
+            "markdown_inline",
+        }
+
+        require("nvim-treesitter").setup {
+            install_dir = vim.fn.stdpath("data") .. "/site",
+        }
+
+        require("nvim-treesitter").install(parsers)
+
+        vim.api.nvim_create_autocmd('FileType', {
+            pattern = parsers,
+            callback = function()
+                vim.treesitter.start()
+            end,
+        })
+    end
 }
