@@ -4,7 +4,9 @@ return {
     config = function ()
         local parsers = {
             "c",
+            "css",
             "go",
+            "html",
             "javascript",
             "lua",
             "php",
@@ -29,7 +31,6 @@ return {
         vim.api.nvim_create_autocmd('FileType', {
             pattern = parsers,
             callback = function()
-                -- syntax highlighting, provided by Neovim
                 vim.treesitter.start()
             end,
         })
