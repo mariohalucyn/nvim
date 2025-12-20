@@ -3,6 +3,7 @@ return {
     build = ":TSUpdate",
     config = function ()
         local parsers = {
+            "c",
             "go",
             "javascript",
             "lua",
