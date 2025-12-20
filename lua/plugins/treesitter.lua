@@ -20,6 +20,7 @@ return {
         }
 
         require("nvim-treesitter").setup {
+            -- Directory to install parsers and queries to (prepended to `runtimepath` to have priority)
             install_dir = vim.fn.stdpath("data") .. "/site",
         }
 
@@ -28,6 +29,7 @@ return {
         vim.api.nvim_create_autocmd('FileType', {
             pattern = parsers,
             callback = function()
+                -- syntax highlighting, provided by Neovim
                 vim.treesitter.start()
             end,
         })
