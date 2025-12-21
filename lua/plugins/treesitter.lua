@@ -3,11 +3,12 @@ return {
     build = ":TSUpdate",
     config = function ()
         local parsers = {
-            "bash",
             "css",
             "gitcommit",
             "gitignore",
             "go",
+            "gomod",
+            "gosum",
             "html",
             "javascript",
             "json",
@@ -19,6 +20,7 @@ return {
             "python",
             "sql",
             "query",
+            "toml",
             "typescript",
             "vim",
             "vimdoc",
