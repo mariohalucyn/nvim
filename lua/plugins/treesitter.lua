@@ -3,22 +3,27 @@ return {
     build = ":TSUpdate",
     config = function ()
         local parsers = {
-            "c",
+            "bash",
             "css",
+            "gitcommit",
+            "gitignore",
             "go",
             "html",
             "javascript",
+            "json",
             "lua",
+            "make",
+            "markdown",
+            "markdown_inline",
             "php",
             "python",
             "sql",
+            "query",
             "typescript",
             "vim",
             "vimdoc",
             "vue",
-            "query",
-            "markdown",
-            "markdown_inline",
+            "yaml"
         }
 
         require("nvim-treesitter").setup {
@@ -28,7 +33,7 @@ return {
 
         require("nvim-treesitter").install(parsers)
 
-        vim.api.nvim_create_autocmd('FileType', {
+        vim.api.nvim_create_autocmd("FileType", {
             pattern = parsers,
             callback = function()
                 vim.treesitter.start()
