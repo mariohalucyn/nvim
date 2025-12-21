@@ -4,7 +4,6 @@ return {
     config = function ()
         local parsers = {
             "css",
-            "gitcommit",
             "gitignore",
             "go",
             "gomod",
