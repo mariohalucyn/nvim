@@ -10,7 +10,7 @@ return {
             "lua_ls",
             "pyright",
             "tailwindcss",
-            "ts_ls",
+            "vtsls",
             "vue_ls"
         },
     },
@@ -18,40 +18,4 @@ return {
         { "mason-org/mason.nvim", opts = {} },
         "neovim/nvim-lspconfig",
     },
-    config = function()
-        vim.lsp.config("ts_ls", {
-            init_options = {
-              plugins = {
-                {
-                  name = "@vue/typescript-plugin",
-                  location = vim.fn.stdpath "data" .. "/mason/packages/vue-language-server/node_modules/@vue/language-server",
-                  languages = { "vue" },
-                },
-              },
-            },
-            filetypes = { "typescript", "javascript",  "vue" },
-        })
-        -- vim.lsp.config("vtsls", {
-        --     filetypes = { "typescript", "javascript",  "vue" },
-        --     settings = {
-        --         vtsls = {
-        --             tsserver = {
-        --                 globalPlugins = {
-        --                     {
-        --                         name = "@vue/typescript-plugin",
-        --                         location = vim.fn.stdpath "data" .. "/mason/packages/vue-language-server/node_modules/@vue/language-server",
-        --                         languages = { "vue" },
-        --                         configNamespace = "typescript",
-        --                     }
-        --                 }
-        --             }
-        --         }
-        --     }
-        -- })
-        vim.lsp.enable({
-            "vue_ls",
-            "ts_ls",
-            -- "vtsls",
-        })
-    end,
 }
