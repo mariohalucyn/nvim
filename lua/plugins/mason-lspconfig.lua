@@ -6,9 +6,7 @@ return {
             "eslint",
             "gopls",
             "html",
-            "intelephense",
             "lua_ls",
-            "pyright",
             "tailwindcss",
             "vtsls",
             "vue_ls"

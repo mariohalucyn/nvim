@@ -5,10 +5,14 @@ return {
     config = function ()
         local parsers = {
             "css",
+            "comment",
+            "dockerfile",
+            "gitcommit",
             "gitignore",
             "go",
             "gomod",
             "gosum",
+            "gotmpl",
             "html",
             "javascript",
             "json",
