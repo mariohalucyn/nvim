@@ -4,6 +4,7 @@ return {
     lazy = false,
     config = function ()
         local parsers = {
+            "c",
             "css",
             "comment",
             "dockerfile",
