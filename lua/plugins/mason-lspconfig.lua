@@ -2,8 +2,6 @@ return {
     "mason-org/mason-lspconfig.nvim",
     opts = {
         ensure_installed = {
-            "basedpyright",
-            "clangd",
             "cssls",
             "eslint",
             "gopls",
