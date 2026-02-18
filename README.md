@@ -9,8 +9,6 @@ Make sure the following dependencies are installed before using this configurati
 | **[curl](https://curl.se/)** | — |
 | **[gcc](https://github.com/gcc-mirror/gcc)** | — |
 | **[nvm](https://github.com/nvm-sh/nvm)** | — |
-| **[Go](https://go.dev/)** | — |
-| **[Lua](https://www.lua.org/)** | `5.1` or newer |
 | **[ripgrep](https://github.com/astrand/xclip)** | — |
 | **[xclip](https://github.com/astrand/xclip)** | — |
 | **[tree-sitter-cli](https://github.com/tree-sitter/tree-sitter)** | — |
