@@ -4,10 +4,8 @@ return {
         ensure_installed = {
             "cssls",
             "eslint",
-            "gopls",
             "html",
             "intelephense",
-            "laravel_ls",
             "lua_ls",
             "tailwindcss",
             "vtsls",
