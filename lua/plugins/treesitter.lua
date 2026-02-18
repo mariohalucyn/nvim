@@ -4,9 +4,9 @@ return {
     lazy = false,
     config = function ()
         local parsers = {
-            "c",
+            "bash",
             "css",
-            "comment",
+            "diff",
             "dockerfile",
             "gitcommit",
             "gitignore",
@@ -24,7 +24,6 @@ return {
             "php",
             "python",
             "sql",
-            "query",
             "toml",
             "typescript",
             "vim",
