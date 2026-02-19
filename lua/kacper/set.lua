@@ -30,16 +30,6 @@ vim.diagnostic.config({
     },
 })
 
-vim.lsp.config("lua_ls", {
-    settings = {
-        Lua = {
-            diagnostics = {
-                globals = { "vim" }
-            },
-        },
-    },
-})
-
 vim.lsp.config("vtsls", {
     filetypes = { "typescript", "javascript",  "vue" },
     settings = {
